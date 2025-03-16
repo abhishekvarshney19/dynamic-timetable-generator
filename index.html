@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Dynamic Timetable Generator</h1>
+    <p>Create a customized timetable for your classes with common subjects!</p>
+</header>
+
+<main>
+    <div class="form-container">
+        <h2>Enter Timetable Details</h2>
+        <div class="input-container">
+            <label for="numTeachers">Number of Teachers: </label>
+            <input type="number" id="numTeachers" min="1" required>
+        </div>
+        <div class="input-container">
+            <label for="numClasses">Number of Classes with common subjects: </label>
+            <input type="number" id="numClasses" min="1" required>
+        </div>
+        <div class="input-container">
+            <label for="numPeriods">Number of Periods: </label>
+            <input type="number" id="numPeriods" min="1" required>
+        </div>
+        
+        <div id="teacherInputs"></div>
+        <button class="generate-btn" onclick="generateTimetable()">Generate Timetable</button>
+    </div>
+
+    <!-- Timetable Display Section -->
+    <section id="timetableSection" style="display: none;">
+        <h2>Generated Timetable</h2>
+        <div id="timetableContainer"></div>
+        <button class="download-btn" onclick="downloadTimetable()">Download Timetable</button>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

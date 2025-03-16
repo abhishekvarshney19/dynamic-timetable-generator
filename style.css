@@ -1,0 +1,133 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(45deg, #4caf50, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Form Container */
+.form-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Input Styling */
+.input-container {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 60%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.generate-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.generate-btn:hover {
+    background-color: #388e3c;
+}
+
+.download-btn {
+    background-color: #2196f3;
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #1976d2;
+}
+
+/* Timetable Section Styling */
+#timetableSection {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Timetable Styling */
+#timetableContainer {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="number"] {
+        width: 100%;
+    }
+}
